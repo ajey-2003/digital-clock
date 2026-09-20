@@ -36,7 +36,7 @@ Follow these steps to run the project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone  https://github.com/ajey-2003/digital-clock
 ```
 
 ### 2. Navigate to the Project Folder
@@ -80,5 +80,7 @@ Potential features to add in future versions:
 Created as a frontend web development project to practice HTML, CSS, and JavaScript.
 
 ---
+
+## Live Demo link : https://ajey-2003.github.io/digital-clock
 
 ⭐ If you find this project useful, feel free to star the repository!
