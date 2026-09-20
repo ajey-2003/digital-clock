@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Connect CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Top bar: title and buttons -->
+    <div class="topbar">
+      <h1>Digital Clock</h1>
+      <div class="buttons">
+        <button id="btn12">12h</button>
+        <button id="btn24" class="active">24h</button>
+        <button id="themeBtn">Light</button>
+      </div>
+    </div>
+
+    <!-- Main clock -->
+    <div class="clock-box">
+      <div id="time">00:00:00</div>
+      <div id="ampm"></div>
+      <div class="progress"><div id="bar"></div></div>
+      <div id="date">Loading date...</div>
+    </div>
+
+    <!-- World clocks -->
+    <h2>World Clocks</h2>
+    <div class="world">
+      <div class="city-box"><p>London</p><h3 id="london">--:--</h3></div>
+      <div class="city-box"><p>New York</p><h3 id="newyork">--:--</h3></div>
+      <div class="city-box"><p>Dubai</p><h3 id="dubai">--:--</h3></div>
+      <div class="city-box"><p>Tokyo</p><h3 id="tokyo">--:--</h3></div>
+    </div>
+
+    <p class="footer">BCA Final Year Project | Made with HTML, CSS and JavaScript</p>
+
+  </div>
+
+  <!-- Connect JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

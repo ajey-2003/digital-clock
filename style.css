@@ -1,0 +1,173 @@
+/* Colors (dark theme is default) */
+body {
+  --bg: #0e1621;
+  --box: #152232;
+  --line: #27394f;
+  --text: #eaf0f7;
+  --muted: #8ea2b8;
+  --accent: #ffb547;
+}
+
+/* Colors for light theme */
+body.light {
+  --bg: #eef2f6;
+  --box: #ffffff;
+  --line: #d3dce6;
+  --text: #0f1b2b;
+  --muted: #5b6c80;
+  --accent: #c2410c;
+}
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Instrument Sans", Arial, sans-serif;
+}
+
+/* Main container */
+.app {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 16px;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  font-size: 24px;
+}
+
+/* Buttons */
+.buttons button {
+  padding: 8px 16px;
+  margin-left: 6px;
+  background-color: var(--box);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: var(--text);
+}
+
+/* Selected button (12h or 24h) */
+.buttons button.active {
+  background-color: var(--accent);
+  color: #111;
+  border-color: var(--accent);
+}
+
+/* Big clock box */
+.clock-box {
+  background-color: var(--box);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 50px 20px 30px;
+  text-align: center;
+}
+
+#time {
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+#ampm {
+  height: 24px;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Seconds progress bar */
+.progress {
+  height: 4px;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: var(--line);
+  border-radius: 4px;
+}
+
+#bar {
+  height: 100%;
+  width: 0;
+  background-color: var(--accent);
+  border-radius: 4px;
+}
+
+#date {
+  font-size: 20px;
+}
+
+/* World clocks */
+h2 {
+  margin: 30px 0 12px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.world {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.city-box {
+  background-color: var(--box);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.city-box p {
+  color: var(--muted);
+}
+
+.city-box h3 {
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  font-size: 26px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Mobile screens */
+@media (max-width: 700px) {
+  #time {
+    font-size: 48px;
+  }
+
+  #date {
+    font-size: 16px;
+  }
+
+  .world {
+    grid-template-columns: 1fr 1fr;
+  }
+}
