@@ -81,6 +81,6 @@ Created as a frontend web development project to practice HTML, CSS, and JavaScr
 
 ---
 
-## Live Demo link : https://ajey-2003.github.io/digital-clock
-
+## Live Demo link : 
+https://ajey-2003.github.io/digital-clock
 ⭐ If you find this project useful, feel free to star the repository!
